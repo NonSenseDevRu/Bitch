@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "MMO",
+			"path": "."
+		},
+		{
+			"name": "UE4",
+			"path": "/home/user/Apps/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug"
+		]
+	}
+}

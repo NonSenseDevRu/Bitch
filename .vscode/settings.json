@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/home/user/Documents/Unreal Projects/mmo/.vscode": true,
+		"/home/user/Documents/Unreal Projects/mmo/AdditionalTools": true,
+		"/home/user/Documents/Unreal Projects/mmo/Content": true,
+		"/home/user/Documents/Unreal Projects/mmo/Intermediate": true,
+		"/home/user/Documents/Unreal Projects/mmo/Saved": true
+	}
+}

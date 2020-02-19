@@ -1,0 +1,3635 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "MMO Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"IOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Android Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Android",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"TVOS",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO XXX Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO XXX DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO XXX Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO XXX Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMO XXX Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMO XXX Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMO",
+				"XXX",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOClient Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOClient Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOClient",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOEditor",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Linux",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"LinuxAArch64",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Debug",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"DebugGame",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Development",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Shipping",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"MMOServer Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		},
+		{
+			"label": "MMOServer Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"MMOServer",
+				"Mac",
+				"Test",
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/user/Apps/UnrealEngine"
+			}
+		}
+	]
+}

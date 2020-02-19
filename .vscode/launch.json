@@ -1,0 +1,204 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "MMO (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MMO Linux Debug Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMO-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMO (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MMO Linux DebugGame Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMO-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMO (Development)",
+			"request": "launch",
+			"preLaunchTask": "MMO Linux Development Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMO",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMO (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MMO Linux Shipping Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMO-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMO (Test)",
+			"request": "launch",
+			"preLaunchTask": "MMO Linux Test Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMO-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOClient (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MMOClient Linux Debug Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOClient-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOClient (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MMOClient Linux DebugGame Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOClient-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOClient (Development)",
+			"request": "launch",
+			"preLaunchTask": "MMOClient Linux Development Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOClient",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOClient (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MMOClient Linux Shipping Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOClient-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOClient (Test)",
+			"request": "launch",
+			"preLaunchTask": "MMOClient Linux Test Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOClient-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MMOEditor Linux Debug Build",
+			"program": "/home/user/Apps/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject"
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MMOEditor Linux DebugGame Build",
+			"program": "/home/user/Apps/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject"
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "MMOEditor Linux Development Build",
+			"program": "/home/user/Apps/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/user/Documents/Unreal Projects/mmo/MMO.uproject"
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOServer (Debug)",
+			"request": "launch",
+			"preLaunchTask": "MMOServer Linux Debug Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOServer-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOServer (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "MMOServer Linux DebugGame Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOServer-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOServer (Development)",
+			"request": "launch",
+			"preLaunchTask": "MMOServer Linux Development Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOServer",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOServer (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "MMOServer Linux Shipping Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOServer-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "MMOServer (Test)",
+			"request": "launch",
+			"preLaunchTask": "MMOServer Linux Test Build",
+			"program": "/home/user/Documents/Unreal Projects/mmo/Binaries/Linux/MMOServer-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/user/Apps/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/user/Apps/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/user/Documents/Unreal Projects/mmo/MMO.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/user/Apps/UnrealEngine"
+		}
+	]
+}
